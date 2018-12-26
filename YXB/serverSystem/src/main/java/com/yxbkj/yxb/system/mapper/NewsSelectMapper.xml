@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yxbkj.yxb.system.mapper.NewsSelectMapper">
+	<select id="selectNews" resultType="com.yxbkj.yxb.entity.app.Newss" >
+		SELECT id as Id, news_id as newsId,title as title, img as img, content as content,
+		creator as creator, creator_id as creatorId, creator_time as creatorTime, read_num as readNum, ext4 as ext4
+		 FROM yxb_news WHERE title LIKE CONCAT(CONCAT('%', #{title}), '%')
+	</select>
+	<select id="selectContent" resultType="com.yxbkj.yxb.entity.app.Newss" >
+		SELECT  id as Id, news_id as newsId,title as title, img as img, content as content,
+		creator as creator, creator_time as creatorTime, read_num as readNum, ext4 as ext4
+		 FROM yxb_news WHERE content LIKE CONCAT(CONCAT('%', #{content}), '%')
+	</select>
+</mapper>
+

@@ -1,0 +1,22 @@
+server:
+  port: 8761
+
+security:
+  basic:
+    enabled: true
+  user:
+    name: admin
+    password: yixiaobaokeji
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://${security.user.name}:${security.user.password}@${eureka.instance.hostname}:${server.port}/hystrix/
+  server:
+    # see : http://www.jianshu.com/p/e2bebfb0d075 测试环境建议关闭
+    enable-self-preservation: true
+    eviction-interval-timer-in-ms: 60000

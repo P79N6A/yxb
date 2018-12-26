@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yxbkj.yxb.system.mapper.QuestionListMapper">
+	<!--<select id="myQuestion" resultType="com.yxbkj.yxb.entity.app.QuestionList" >-->
+		<!--SELECT q.question_id AS titleId, q.question_content AS title, q.creator AS titleCreator,-->
+		<!--q.creator_time AS titleCreatorTime, a.answer_id AS answerId, a.answer_content AS answerContent,-->
+		<!--a.creator AS answerCreator, a.creator_time AS answerCreatorTime-->
+		<!--FROM yxb_question q LEFT JOIN yxb_answer a ON q.question_id = a.question_id WHERE q.validity = 10000001-->
+		<!--AND a.validity = 10000001 AND a.creator_id = #{creatorId} ORDER BY q.sort-->
+	<!--</select>-->
+	<select id="questionList" resultType="com.yxbkj.yxb.entity.app.Question" >
+		SELECT q.question_id AS questionId, q.question_content AS questionContent, q.creator AS creator, q.creator_id as creatorId,
+		 q.creator_time AS creatorTime, i.headimg AS questionHeadimg
+		FROM yxb_question q
+		LEFT JOIN yxb_member_info i ON q.creator_id = i.member_id
+		WHERE q.validity = 10000001
+		order by q.sort desc, q.creator_time DESC
+		limit #{limit}, #{offset}
+	</select>
+	<select id="questionCount" resultType="java.lang.Integer" >
+	   SELECT COUNT(*) FROM yxb_answer WHERE question_id = #{questionId} and validity = 10000001
+	</select>
+</mapper>
+

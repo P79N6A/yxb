@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yxbkj.yxb.system.mapper.MyAnswerMapper">
+	<select id="myAnswer" resultType="com.yxbkj.yxb.entity.app.MyAnswer" >
+		SELECT c.id AS Id, c.answer_id AS answerId, c.question_id AS questionId, c.answer_content AS answerContent,
+		i.nickname AS nickname, c.creator_time AS creatorTime, i.headimg AS headimg
+		FROM yxb_answer c
+		LEFT JOIN yxb_member_info i ON c.creator_id = i.member_id
+		WHERE c.creator_id = #{creatorId}
+		AND c.validity = 10000001
+		limit #{limit}, #{offset}
+	</select>
+	<select id="question" resultType="com.yxbkj.yxb.entity.app.Question" >
+		select question_content from yxb_question where question_id = #{questionId} AND validity = 10000001
+	</select>
+</mapper>
+

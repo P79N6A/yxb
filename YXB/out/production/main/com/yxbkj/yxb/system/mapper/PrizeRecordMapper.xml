@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yxbkj.yxb.system.mapper.PrizeRecordMapper">
+	<select id="getPrizeRecordByPage" resultType="com.yxbkj.yxb.entity.system.PrizeRecord" >
+	 		SELECT r.* from yxb_prize_record r LEFT JOIN yxb_prize p on r.prize_id = p.prize_id
+	 		where p.prize_type !='10000671' order by r.creator_time desc
+	 		 limit #{size} OFFSET #{index}
+	</select>
+</mapper>
+

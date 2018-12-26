@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yxbkj.yxb.system.mapper.CommentMapper">
+	<select id="comment" resultType="com.yxbkj.yxb.entity.app.Comment" >
+		SELECT c.id AS Id, c.comment_id AS commentId, c.be_commented_id AS beCommentedId,
+		i.nickname AS nickname, c.content AS content, c.comment_time AS commentTime, i.headimg AS headimg
+		FROM yxb_comment c
+		LEFT JOIN yxb_member_info i ON c.member_id = i.member_id
+		LEFT JOIN yxb_news n ON n.news_id = c.be_commented_id
+		where c.be_commented_id = #{beCommentedId}
+		and c.validity = 10000001
+		ORDER BY c.sort DESC, c.comment_time DESC
+		limit #{limit}, #{offset}
+	</select>
+	<select id="countLike" resultType="java.lang.Integer" >
+		SELECT COUNT(*) AS s FROM yxb_like where be_liked_id = #{beCommentedId} and validity = 10000001
+	</select>
+	<select id="mycountcommentLike" resultType="java.lang.Integer" >
+		SELECT COUNT(*) AS s FROM yxb_comment c LEFT JOIN yxb_like l ON l.be_liked_id = c.comment_id
+		WHERE c.be_commented_id = #{beCommentedId} AND c.validity = 10000001
+	</select>
+	<select id="mycomment" resultType="com.yxbkj.yxb.entity.app.Comment" >
+		SELECT c.id AS Id, c.comment_id AS commentId, c.be_commented_id AS beCommentedId,
+		i.nickname AS nickname, c.content AS content, c.comment_time AS commentTime, i.headimg AS headimg,
+		n.title AS newsTitle,n.news_id AS newsId, n.creator_time AS creatorTime
+		FROM yxb_comment c
+		LEFT JOIN yxb_member_info i ON c.member_id = i.member_id
+		LEFT JOIN yxb_news n ON n.news_id = c.be_commented_id
+		where c.member_id = #{memberId}
+		and c.validity = 10000001
+		and n.validity = 10000001
+		ORDER BY c.sort DESC, c.comment_time DESC
+		limit #{limit}, #{offset}
+	</select>
+	<select id="countcomment" resultType="java.lang.Integer" >
+		SELECT COUNT(*) FROM yxb_comment WHERE be_commented_id = #{beCommentedId} AND validity = 10000001
+	</select>
+	<select id="mycountcomment" resultType="java.lang.Integer" >
+		SELECT COUNT(*) FROM yxb_comment WHERE member_id = #{memberId} AND validity = 10000001
+	</select>
+</mapper>
+

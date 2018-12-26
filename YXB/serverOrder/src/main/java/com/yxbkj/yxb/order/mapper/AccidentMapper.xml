@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yxbkj.yxb.order.mapper.AccidentMapper">
+    <select id="selectOrderAccident" resultType="com.yxbkj.yxb.entity.module.AccidentOrder">
+        SELECT o.order_id AS orderId ,o.order_source AS orderSource,o.order_member_name AS orderMemberName,
+        o.order_member_phone AS orderMemberPhone,p.policy_url AS policyUrl,
+        p.protect_holder AS protectHolder, p.protect_card AS protectCard, p.policy_num AS policyNum,
+        o.amount AS amount, o.creator_time AS creatorTime, c.company_logo AS companyLogo ,i.product_name AS productName,
+        o.order_status AS orderStatus, p.policy_holder AS policyHolder,  p.protect_holder AS protectHolder, o.pay_status AS payStatus
+        FROM yxb_order o, yxb_order_protect p, yxb_product_info i, yxb_product_company c
+        WHERE o.order_id = p.order_id AND i.product_catalcode = 6 AND i.product_id = o.product_id
+        AND o.order_member_id = #{orderMemberId} AND o.validity = 10000001 AND c.company_code = i.company_code
+         AND o.order_status = #{orderStatus} ORDER BY o.creator_time DESC limit #{limit}, #{offset}
+	</select>
+    <select id="selectPayAccident" resultType="com.yxbkj.yxb.entity.module.AccidentOrder">
+        SELECT o.order_id AS orderId ,o.order_source AS orderSource,o.order_member_name AS orderMemberName,
+        o.order_member_phone AS orderMemberPhone,p.policy_url AS policyUrl,
+        p.protect_holder AS protectHolder, p.protect_card AS protectCard, p.policy_num AS policyNum,
+        o.amount AS amount, o.creator_time AS creatorTime, c.company_logo AS companyLogo ,i.product_name AS productName,
+        o.order_status AS orderStatus, p.policy_holder AS policyHolder,  p.protect_holder AS protectHolder, o.pay_status AS payStatus
+        FROM yxb_order o, yxb_order_protect p, yxb_product_info i, yxb_product_company c
+        WHERE o.order_id = p.order_id AND i.product_catalcode = 6 AND i.product_id = o.product_id
+        AND o.order_member_id = #{orderMemberId} AND o.validity = 10000001 AND c.company_code = i.company_code
+         AND o.pay_status = #{payStatus} ORDER BY o.creator_time DESC limit #{limit}, #{offset}
+	</select>
+    <select id="accidentAll" resultType="com.yxbkj.yxb.entity.module.AccidentOrder">
+        SELECT o.order_id AS orderId ,o.order_source AS orderSource,o.order_member_name AS orderMemberName,
+        o.order_member_phone AS orderMemberPhone,p.policy_url AS policyUrl,
+        p.protect_holder AS protectHolder, p.protect_card AS protectCard, p.policy_num AS policyNum,
+        o.amount AS amount, o.creator_time AS creatorTime, c.company_logo AS companyLogo ,i.product_name AS productName,
+        o.order_status AS orderStatus, p.policy_holder AS policyHolder,  p.protect_holder AS protectHolder, o.pay_status AS payStatus
+        FROM yxb_order o , yxb_order_protect p, yxb_product_info i, yxb_product_company c
+        WHERE o.order_id = p.order_id AND i.product_catalcode = 6 AND i.product_id = o.product_id
+        AND o.order_member_id = #{orderMemberId} AND o.validity = 10000001 AND c.company_code = i.company_code ORDER BY o.creator_time DESC
+         limit #{limit}, #{offset}
+	</select>
+</mapper>

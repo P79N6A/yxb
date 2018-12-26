@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/YXB.iml" filepath="$PROJECT_DIR$/YXB.iml" />
+      <module fileurl="file://$PROJECT_DIR$/apiApp/apiApp.iml" filepath="$PROJECT_DIR$/apiApp/apiApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/entity/entity.iml" filepath="$PROJECT_DIR$/entity/entity.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureka/eureka.iml" filepath="$PROJECT_DIR$/eureka/eureka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kit/kit.iml" filepath="$PROJECT_DIR$/kit/kit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/serverProduct/product.iml" filepath="$PROJECT_DIR$/serverProduct/product.iml" />
+      <module fileurl="file://$PROJECT_DIR$/redisKit/redisKit.iml" filepath="$PROJECT_DIR$/redisKit/redisKit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/serverMember/serverMember.iml" filepath="$PROJECT_DIR$/serverMember/serverMember.iml" />
+      <module fileurl="file://$PROJECT_DIR$/serverOrder/serverOrder.iml" filepath="$PROJECT_DIR$/serverOrder/serverOrder.iml" />
+      <module fileurl="file://$PROJECT_DIR$/serverSystem/system.iml" filepath="$PROJECT_DIR$/serverSystem/system.iml" />
+    </modules>
+  </component>
+</project>

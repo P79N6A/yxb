@@ -1,0 +1,29 @@
+server:
+  port: 9991
+ribbon:
+  ReadTimeout: 60000
+  ConnectTimeout: 60000
+spring:
+  profiles:
+      active: dev
+  application:
+    name: apiApp
+
+eureka:
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.application.name}:${spring.cloud.client.ipAddress}:${server.port}
+    lease-renewal-interval-in-seconds: 5 # 续约更新时间间隔（默认30秒）
+    lease-expiration-duration-in-seconds: 30 # 续约到期时间（默认90秒）
+  client:
+    healthcheck:
+      enabled: true
+    service-url:
+      defaultZone: http://admin:yixiaobaokeji@localhost:8761/eureka
+
+feign.hystrix.enable: false
+hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 5000
+
+logging:
+  path: logs/apiApp
+  config: classpath:logback.xml

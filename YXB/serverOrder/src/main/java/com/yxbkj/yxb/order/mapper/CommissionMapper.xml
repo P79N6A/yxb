@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yxbkj.yxb.order.mapper.CommissionMapper">
+    <select id="commissionAll" resultType="com.yxbkj.yxb.entity.order.Commission">
+    SELECT c.id as id, c.order_id AS orderId, c.status AS `status`, c.money AS money, c.order_type AS orderType, c.commission_type AS commissionType,
+     c.wait_time AS waitTime, o.order_member_name AS orderMemberName, o.creator_time AS creatorTime, i.product_name AS productName
+    FROM yxb_cash_commission c, yxb_order o, yxb_product_info i WHERE c.order_id = o.order_id and i.product_id = o.product_id AND c.member_id = #{memberId}
+        <if test='sort != null and sort == "desc"'>
+            order by c.wait_time desc
+        </if>
+        <if test='sort != null and sort == "asc"'>
+            order by c.wait_time asc
+        </if>
+     limit #{limit}, #{offset}
+	</select>
+    <select id="commissionSelectS" resultType="com.yxbkj.yxb.entity.order.Commission">
+    SELECT c.id as id, c.order_id AS orderId, c.status AS `status`, c.money AS money, c.order_type AS orderType, c.commission_type AS commissionType,
+     c.wait_time AS waitTime, o.order_member_name AS orderMemberName, o.creator_time AS creatorTime, i.product_name AS productName
+    FROM yxb_cash_commission c, yxb_order o, yxb_product_info i WHERE c.order_id = o.order_id and i.product_id = o.product_id
+        AND c.status = #{status} AND c.member_id = #{memberId}
+        <if test='sort != null and sort == "desc"'>
+            order by c.wait_time desc
+        </if>
+        <if test='sort != null and sort == "asc"'>
+            order by c.wait_time asc
+        </if>
+        limit #{limit}, #{offset}
+	</select>
+</mapper>

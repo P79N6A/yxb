@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yxbkj.yxb.product.mapper.ProductInfoMapper">
+	<select id="getInvestmentProduct" resultType="com.yxbkj.yxb.entity.product.ProductInvestment" >
+		SELECT i.other_pid as otherPid,i.id as id,i.product_id as productId,i.fund_apr as fundApr,i.fund_account as fundAccount
+		,i.fund_account_total as fundAccountTotal,i.fund_period as fundPeriod,i.repayment_type as repaymentType,i.fund_type as fundType
+		,i.valuedate_time as valuedateTime,i.bidding_time as biddingTime,i.fund_finishrate as fundFinishrate
+		FROM  yxb_product_info p
+		LEFT JOIN
+		yxb_product_catalogue c ON p.product_catalcode = c.product_catalcode
+		LEFT JOIN yxb_product_investment i ON i.product_id = p.product_id
+		WHERE p.product_id = #{productId} AND c.product_type = #{productType}
+	</select>
+</mapper>
+

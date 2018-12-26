@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yxbkj.yxb.system.mapper.QuestionSelectMapper">
+	<select id="selectQuestion" resultType="com.yxbkj.yxb.entity.app.Questions" >
+		SELECT id as id, question_id as questionId, question_content as title,
+		validity as validity, creator_id as creatorId, creator as creator, creator_time as creatorTime
+		 FROM yxb_question WHERE question_content LIKE CONCAT(CONCAT('%', #{title}, '%')) and validity = 10000001 ORDER BY sort desc
+	</select>
+</mapper>
+

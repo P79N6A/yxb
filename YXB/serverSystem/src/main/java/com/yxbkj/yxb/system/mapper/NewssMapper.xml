@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yxbkj.yxb.system.mapper.NewssMapper">
+	<select id="newss" resultType="com.yxbkj.yxb.entity.app.Newss" >
+		SELECT n.id as Id, n.news_id as newsId, n.title as title, n.img as img, n.content as content, n.file_path as filePath,
+		n.file_type as fileType, n.duration as duration, n.creator as creator, n.ext4 as ext4, n.creator_id as creatorId, n.creator_time as creatorTime, s.column_type as columnType, n.read_num as readNum
+		FROM yxb_news n, yxb_news_sort s WHERE n.news_id = s.news_id
+		 <if test="columnType != null">
+		 	AND s.column_type = #{columnType}
+		 </if>
+		and n.validity = 10000001
+		and s.validity = 10000001
+		ORDER BY s.sort DESC, s.creator_time DESC
+		limit #{limit}, #{offset}
+	</select>
+
+	<select id="countnews" resultType="java.lang.Integer" >
+		SELECT COUNT(*) FROM yxb_news n LEFT JOIN yxb_like l ON n.news_id = l.be_liked_id WHERE l.be_liked_id = #{newsId}
+		and l.validity = 10000001
+		and n.validity = 10000001
+	</select>
+</mapper>

@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.znutil.yop:znUtil:1.0.0">
+    <CLASSES>
+      <root url="jar://D:/maven_repository/com/znutil/yop/znUtil/1.0.0/znUtil-1.0.0.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://D:/maven_repository/com/znutil/yop/znUtil/1.0.0/znUtil-1.0.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://D:/maven_repository/com/znutil/yop/znUtil/1.0.0/znUtil-1.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

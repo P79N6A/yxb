@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yxbkj.yxb.order.mapper.CarorderMapper">
+    <select id="selectOrder" resultType="com.yxbkj.yxb.entity.module.OrderVo">
+            SELECT o.order_id AS orderId ,c.plate_number AS plateNumber,o.order_source AS orderSource,o.order_member_name
+      AS orderMemberName, c.insurance_time_start AS insuranceTimeStart, c.insurance_time_end AS insuranceTimeEnd,
+       p.company_logo AS companyLogo ,i.product_name AS productName, o.pay_status AS payStatus,
+      o.amount AS amount, o.order_status AS orderStatus FROM yxb_order o, yxb_order_car c, yxb_product_company p, yxb_product_info i
+      WHERE o.order_id = c.order_id AND p.company_code = i.company_code AND i.product_id = o.product_id
+      AND o.order_member_id = #{orderMemberId} AND o.validity = 10000001
+       AND o.order_status = #{orderStatus} ORDER BY o.creator_time DESC limit #{limit}, #{offset}
+	</select>
+    <select id="selectPay" resultType="com.yxbkj.yxb.entity.module.OrderVo">
+            SELECT o.order_id AS orderId ,c.plate_number AS plateNumber,o.order_source AS orderSource,o.order_member_name
+      AS orderMemberName, c.insurance_time_start AS insuranceTimeStart, c.insurance_time_end AS insuranceTimeEnd,
+       p.company_logo AS companyLogo ,i.product_name AS productName, o.pay_status AS payStatus,
+      o.amount AS amount, o.order_status AS orderStatus FROM yxb_order o, yxb_order_car c, yxb_product_company p, yxb_product_info i
+      WHERE o.order_id = c.order_id AND p.company_code = i.company_code AND i.product_id = o.product_id
+      AND o.order_member_id = #{orderMemberId} AND o.validity = 10000001
+       AND o.pay_status = #{payStatus} ORDER BY o.creator_time DESC limit #{limit}, #{offset}
+	</select>
+    <select id="selectAll" resultType="com.yxbkj.yxb.entity.module.OrderVo">
+            SELECT o.order_id AS orderId ,c.plate_number AS plateNumber,o.order_source AS orderSource,o.order_member_name
+      AS orderMemberName, c.insurance_time_start AS insuranceTimeStart, c.insurance_time_end AS insuranceTimeEnd,
+       p.company_logo AS companyLogo ,i.product_name AS productName, o.pay_status AS payStatus,
+      o.amount AS amount, o.order_status AS orderStatus FROM yxb_order o, yxb_order_car c, yxb_product_company p, yxb_product_info i
+      WHERE o.order_id = c.order_id AND p.company_code = i.company_code AND i.product_id = o.product_id
+      AND o.order_member_id = #{orderMemberId} AND o.validity = 10000001 ORDER BY o.creator_time DESC limit #{limit}, #{offset}
+	</select>
+</mapper>
