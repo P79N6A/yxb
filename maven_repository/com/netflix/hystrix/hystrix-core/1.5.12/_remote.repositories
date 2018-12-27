@@ -1,0 +1,8 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Nov 29 10:00:13 CST 2018
+hystrix-core-1.5.12.jar>alimaven=
+hystrix-core-1.5.12.pom>alimaven=
+hystrix-core-1.5.12.jar>central=
+hystrix-core-1.5.12.pom>central=
+hystrix-core-1.5.12.pom>nexus-aliyun=
+hystrix-core-1.5.12.jar>nexus-aliyun=

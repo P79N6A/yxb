@@ -1,0 +1,5 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Tue Sep 04 15:51:00 CST 2018
+@default-nexus-repos-http\://192.168.3.108\:8081/nexus/content/groups/public/.lastUpdated=1536047460322
+https\://repo.maven.apache.org/maven2/.lastUpdated=1536047460764
+http\://192.168.3.108\:8081/nexus/content/groups/public/.error=Could not transfer artifact com.aliyun.mns\:aliyun-sdk-mns\:pom\:1.1.5 from/to nexus-repos (http\://192.168.3.108\:8081/nexus/content/groups/public/)\: Connect to 192.168.3.108\:8081 [/192.168.3.108] failed\: Connection timed out\: connect

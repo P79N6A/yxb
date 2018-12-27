@@ -1,0 +1,8 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Nov 29 10:00:28 CST 2018
+gson-2.3.pom>central=
+gson-2.3.pom>nexus-aliyun=
+gson-2.3.jar>nexus-aliyun=
+gson-2.3.jar>alimaven=
+gson-2.3.pom>alimaven=
+gson-2.3.jar>central=

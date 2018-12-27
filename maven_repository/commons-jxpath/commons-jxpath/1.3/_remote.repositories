@@ -1,0 +1,8 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Nov 29 10:00:12 CST 2018
+commons-jxpath-1.3.jar>alimaven=
+commons-jxpath-1.3.pom>alimaven=
+commons-jxpath-1.3.jar>central=
+commons-jxpath-1.3.pom>nexus-aliyun=
+commons-jxpath-1.3.pom>central=
+commons-jxpath-1.3.jar>nexus-aliyun=

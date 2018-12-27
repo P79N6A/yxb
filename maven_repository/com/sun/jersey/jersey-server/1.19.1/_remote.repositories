@@ -1,0 +1,8 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Nov 29 10:00:38 CST 2018
+jersey-server-1.19.1.pom>nexus-aliyun=
+jersey-server-1.19.1.jar>nexus-aliyun=
+jersey-server-1.19.1.jar>alimaven=
+jersey-server-1.19.1.jar>central=
+jersey-server-1.19.1.pom>alimaven=
+jersey-server-1.19.1.pom>central=

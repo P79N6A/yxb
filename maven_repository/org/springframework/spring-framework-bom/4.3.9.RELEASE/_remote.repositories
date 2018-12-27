@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Nov 29 09:59:46 CST 2018
+spring-framework-bom-4.3.9.RELEASE.pom>nexus-aliyun=
+spring-framework-bom-4.3.9.RELEASE.pom>central=
+spring-framework-bom-4.3.9.RELEASE.pom>alimaven=

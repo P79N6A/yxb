@@ -1,0 +1,6 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Nov 29 10:07:53 CST 2018
+maven-toolchain-2.2.1.jar>alimaven=
+maven-toolchain-2.2.1.pom>alimaven=
+maven-toolchain-2.2.1.pom>nexus-aliyun=
+maven-toolchain-2.2.1.jar>nexus-aliyun=

@@ -1,0 +1,6 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Nov 29 10:08:07 CST 2018
+asm-util-3.2.pom>alimaven=
+asm-util-3.2.pom>nexus-aliyun=
+asm-util-3.2.jar>nexus-aliyun=
+asm-util-3.2.jar>alimaven=

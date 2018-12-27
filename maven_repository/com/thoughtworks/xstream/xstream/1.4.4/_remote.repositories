@@ -1,0 +1,8 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Nov 29 10:00:28 CST 2018
+xstream-1.4.4.pom>nexus-aliyun=
+xstream-1.4.4.jar>nexus-aliyun=
+xstream-1.4.4.jar>alimaven=
+xstream-1.4.4.pom>alimaven=
+xstream-1.4.4.jar>central=
+xstream-1.4.4.pom>central=

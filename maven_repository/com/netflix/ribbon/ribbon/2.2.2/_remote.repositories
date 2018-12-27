@@ -1,0 +1,8 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Nov 29 10:00:13 CST 2018
+ribbon-2.2.2.pom>central=
+ribbon-2.2.2.jar>alimaven=
+ribbon-2.2.2.pom>alimaven=
+ribbon-2.2.2.pom>nexus-aliyun=
+ribbon-2.2.2.jar>nexus-aliyun=
+ribbon-2.2.2.jar>central=

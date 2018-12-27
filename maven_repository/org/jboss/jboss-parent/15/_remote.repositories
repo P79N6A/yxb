@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Nov 29 09:59:44 CST 2018
+jboss-parent-15.pom>nexus-aliyun=
+jboss-parent-15.pom>alimaven=
+jboss-parent-15.pom>central=

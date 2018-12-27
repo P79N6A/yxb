@@ -1,0 +1,8 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Nov 29 10:00:12 CST 2018
+tomcat-embed-el-8.5.23.pom>nexus-aliyun=
+tomcat-embed-el-8.5.23.jar>nexus-aliyun=
+tomcat-embed-el-8.5.23.jar>central=
+tomcat-embed-el-8.5.23.jar>alimaven=
+tomcat-embed-el-8.5.23.pom>central=
+tomcat-embed-el-8.5.23.pom>alimaven=

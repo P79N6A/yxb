@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Nov 29 09:59:48 CST 2018
+apache-4.pom>nexus-aliyun=
+apache-4.pom>alimaven=
+apache-4.pom>central=

@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Nov 29 09:59:59 CST 2018
+tomcat-jdbc-8.5.23.pom>nexus-aliyun=
+tomcat-jdbc-8.5.23.pom>alimaven=
+tomcat-jdbc-8.5.23.pom>central=

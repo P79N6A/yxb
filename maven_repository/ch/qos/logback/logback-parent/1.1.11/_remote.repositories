@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Nov 29 09:59:39 CST 2018
+logback-parent-1.1.11.pom>nexus-aliyun=
+logback-parent-1.1.11.pom>central=
+logback-parent-1.1.11.pom>alimaven=

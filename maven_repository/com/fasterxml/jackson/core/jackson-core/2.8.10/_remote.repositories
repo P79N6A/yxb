@@ -1,0 +1,8 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Nov 29 10:00:13 CST 2018
+jackson-core-2.8.10.jar>alimaven=
+jackson-core-2.8.10.pom>alimaven=
+jackson-core-2.8.10.jar>central=
+jackson-core-2.8.10.pom>nexus-aliyun=
+jackson-core-2.8.10.pom>central=
+jackson-core-2.8.10.jar>nexus-aliyun=

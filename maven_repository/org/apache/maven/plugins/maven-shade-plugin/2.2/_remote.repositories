@@ -1,0 +1,6 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Nov 29 10:08:06 CST 2018
+maven-shade-plugin-2.2.jar>alimaven=
+maven-shade-plugin-2.2.pom>alimaven=
+maven-shade-plugin-2.2.pom>nexus-aliyun=
+maven-shade-plugin-2.2.jar>nexus-aliyun=

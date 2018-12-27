@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Nov 29 10:00:01 CST 2018
+spring-plugin-core-1.2.0.RELEASE.pom>central=
+spring-plugin-core-1.2.0.RELEASE.pom>nexus-aliyun=
+spring-plugin-core-1.2.0.RELEASE.pom>alimaven=

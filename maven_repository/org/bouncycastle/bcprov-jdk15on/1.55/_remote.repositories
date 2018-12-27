@@ -1,0 +1,8 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Nov 29 10:00:12 CST 2018
+bcprov-jdk15on-1.55.jar>central=
+bcprov-jdk15on-1.55.pom>central=
+bcprov-jdk15on-1.55.jar>alimaven=
+bcprov-jdk15on-1.55.pom>alimaven=
+bcprov-jdk15on-1.55.pom>nexus-aliyun=
+bcprov-jdk15on-1.55.jar>nexus-aliyun=

@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Nov 29 10:00:25 CST 2018
+httpcomponents-core-4.4.6.pom>alimaven=
+httpcomponents-core-4.4.6.pom>nexus-aliyun=
+httpcomponents-core-4.4.6.pom>central=

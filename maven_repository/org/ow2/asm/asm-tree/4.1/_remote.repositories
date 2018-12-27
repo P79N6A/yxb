@@ -1,0 +1,6 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Dec 20 10:38:29 CST 2018
+asm-tree-4.1.pom>nexus-aliyun=
+asm-tree-4.1.jar>alimaven=
+asm-tree-4.1.jar>nexus-aliyun=
+asm-tree-4.1.pom>alimaven=

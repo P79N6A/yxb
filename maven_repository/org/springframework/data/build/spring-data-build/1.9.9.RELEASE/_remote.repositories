@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Nov 29 09:59:36 CST 2018
+spring-data-build-1.9.9.RELEASE.pom>alimaven=
+spring-data-build-1.9.9.RELEASE.pom>nexus-aliyun=
+spring-data-build-1.9.9.RELEASE.pom>central=

@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Nov 29 10:00:00 CST 2018
+oss-parent-5.pom>nexus-aliyun=
+oss-parent-5.pom>central=
+oss-parent-5.pom>alimaven=

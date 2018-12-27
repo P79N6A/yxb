@@ -1,0 +1,8 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Nov 29 10:00:13 CST 2018
+spring-webmvc-4.3.13.RELEASE.pom>nexus-aliyun=
+spring-webmvc-4.3.13.RELEASE.jar>central=
+spring-webmvc-4.3.13.RELEASE.jar>nexus-aliyun=
+spring-webmvc-4.3.13.RELEASE.pom>central=
+spring-webmvc-4.3.13.RELEASE.jar>alimaven=
+spring-webmvc-4.3.13.RELEASE.pom>alimaven=

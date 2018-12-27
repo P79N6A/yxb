@@ -1,0 +1,6 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Nov 29 10:07:53 CST 2018
+commons-lang3-3.1.jar>alimaven=
+commons-lang3-3.1.pom>nexus-aliyun=
+commons-lang3-3.1.jar>nexus-aliyun=
+commons-lang3-3.1.pom>alimaven=

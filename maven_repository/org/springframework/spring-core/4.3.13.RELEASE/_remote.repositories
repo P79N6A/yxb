@@ -1,0 +1,8 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Nov 29 09:59:43 CST 2018
+spring-core-4.3.13.RELEASE.pom>nexus-aliyun=
+spring-core-4.3.13.RELEASE.jar>alimaven=
+spring-core-4.3.13.RELEASE.jar>nexus-aliyun=
+spring-core-4.3.13.RELEASE.jar>central=
+spring-core-4.3.13.RELEASE.pom>alimaven=
+spring-core-4.3.13.RELEASE.pom>central=

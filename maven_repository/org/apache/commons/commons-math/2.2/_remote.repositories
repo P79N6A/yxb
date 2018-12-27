@@ -1,0 +1,8 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Nov 29 10:00:12 CST 2018
+commons-math-2.2.pom>alimaven=
+commons-math-2.2.pom>nexus-aliyun=
+commons-math-2.2.jar>nexus-aliyun=
+commons-math-2.2.jar>central=
+commons-math-2.2.pom>central=
+commons-math-2.2.jar>alimaven=

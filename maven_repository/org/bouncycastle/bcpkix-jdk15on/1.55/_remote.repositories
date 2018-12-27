@@ -1,0 +1,8 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Nov 29 10:00:12 CST 2018
+bcpkix-jdk15on-1.55.jar>alimaven=
+bcpkix-jdk15on-1.55.pom>alimaven=
+bcpkix-jdk15on-1.55.jar>central=
+bcpkix-jdk15on-1.55.pom>central=
+bcpkix-jdk15on-1.55.pom>nexus-aliyun=
+bcpkix-jdk15on-1.55.jar>nexus-aliyun=

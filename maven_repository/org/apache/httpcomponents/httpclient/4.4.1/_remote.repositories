@@ -1,0 +1,8 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Nov 29 10:00:28 CST 2018
+httpclient-4.4.1.pom>nexus-aliyun=
+httpclient-4.4.1.jar>nexus-aliyun=
+httpclient-4.4.1.jar>central=
+httpclient-4.4.1.jar>alimaven=
+httpclient-4.4.1.pom>alimaven=
+httpclient-4.4.1.pom>central=

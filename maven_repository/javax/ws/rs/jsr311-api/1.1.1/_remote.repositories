@@ -1,0 +1,8 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Nov 29 10:00:13 CST 2018
+jsr311-api-1.1.1.pom>nexus-aliyun=
+jsr311-api-1.1.1.jar>nexus-aliyun=
+jsr311-api-1.1.1.jar>alimaven=
+jsr311-api-1.1.1.pom>alimaven=
+jsr311-api-1.1.1.jar>central=
+jsr311-api-1.1.1.pom>central=

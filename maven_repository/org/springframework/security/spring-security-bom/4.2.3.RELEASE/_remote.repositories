@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Nov 29 09:59:36 CST 2018
+spring-security-bom-4.2.3.RELEASE.pom>central=
+spring-security-bom-4.2.3.RELEASE.pom>nexus-aliyun=
+spring-security-bom-4.2.3.RELEASE.pom>alimaven=

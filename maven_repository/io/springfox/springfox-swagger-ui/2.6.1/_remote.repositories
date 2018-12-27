@@ -1,0 +1,8 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Nov 29 10:00:29 CST 2018
+springfox-swagger-ui-2.6.1.jar>central=
+springfox-swagger-ui-2.6.1.jar>alimaven=
+springfox-swagger-ui-2.6.1.pom>alimaven=
+springfox-swagger-ui-2.6.1.pom>nexus-aliyun=
+springfox-swagger-ui-2.6.1.jar>nexus-aliyun=
+springfox-swagger-ui-2.6.1.pom>central=

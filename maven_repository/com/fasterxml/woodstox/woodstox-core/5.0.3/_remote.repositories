@@ -1,0 +1,8 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Nov 29 10:00:38 CST 2018
+woodstox-core-5.0.3.jar>central=
+woodstox-core-5.0.3.pom>alimaven=
+woodstox-core-5.0.3.pom>central=
+woodstox-core-5.0.3.pom>nexus-aliyun=
+woodstox-core-5.0.3.jar>nexus-aliyun=
+woodstox-core-5.0.3.jar>alimaven=
